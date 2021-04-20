@@ -1,0 +1,94 @@
+html, body{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  background:#7023fb;
+}
+
+header {
+  background:#7023fb;
+  grid-area: h;
+}
+
+main {
+  background:#7023fb;
+
+  grid-area:m;
+}
+
+aside {
+  background:#7023fb;
+  grid-area:a;
+}
+.meio{
+  background:#da89f1;
+  grid-area:b;
+  overflow: hidden;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-rows: 15vh 15vh 15vh 15vh 15vh;
+}
+
+footer {
+  background:#7023fb;
+  grid-area:f;
+}
+
+.canto-esquerdo{
+	background:#7023fb;
+    grid-area:ce;	
+}
+.centro{
+	background:#7023fb;
+    grid-area:me;	
+}
+.centro.img{
+	justify-self:center;
+}
+.canto-direito{
+	background:#7023fb;
+    grid-area:cd;	
+}
+
+.container {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 15vh 15vh 40vh 30vh;
+  grid-template-areas: 
+  			"ce . cd"
+  			"ce me cd"
+              "m b a"
+              "f f f";
+}
+
+.miolo{
+	background:#7126b7;
+	display: grid;
+	grid-template-columns: 1fr 21r;
+	grid-template-rows: 5vh 5vh;
+	height: 10vh;
+	border-radius: 10px;
+	grid-column-gap: 10vh;
+
+}
+.titulo{
+	font-size: 20px;
+	margin-left: 10px;
+	color: white;
+	font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+
+}
+.ano{
+	font-size: 20px;
+	margin-left: 10px;
+	color: white;
+	font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+}
+.nota{
+	font-size: 20px;
+	margin-bottom: 0vh;
+	margin-left: 500px;
+	color: white;
+	font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+
+}
