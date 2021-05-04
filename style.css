@@ -2,22 +2,20 @@ html, body{
   margin:0;
   padding:0;
   box-sizing:border-box;
-  background:#7023fb;
+  background: linear-gradient(to bottom right, #7023fb, #c3a4fc ) fixed;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 header {
-  background:#7023fb;
   grid-area: h;
 }
 
 main {
-  background:#7023fb;
-
   grid-area:m;
 }
 
 aside {
-  background:#7023fb;
   grid-area:a;
 }
 .meio{
@@ -26,27 +24,34 @@ aside {
   overflow: hidden;
   overflow-y: scroll;
   display: grid;
-  grid-template-rows: 15vh 15vh 15vh 15vh 15vh;
+  justify-content: space-around;
+  margin-top: 50px;
+  -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+    box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
 }
 
 footer {
-  background:#7023fb;
   grid-area:f;
+  align-items: center;
 }
-
+footer p{
+  margin-left: 50vw;
+  font-size: 20px;
+  margin-left: 10px;
+  color: white;
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+}
 .canto-esquerdo{
-	background:#7023fb;
     grid-area:ce;	
 }
 .centro{
-	background:#7023fb;
-    grid-area:me;	
+   grid-area:me;	
 }
 .centro.img{
 	justify-self:center;
 }
 .canto-direito{
-	background:#7023fb;
     grid-area:cd;	
 }
 
@@ -92,3 +97,21 @@ footer {
 	font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
 
 }
+/**@media screen and (max-width:700px)
+{
+  .meio{
+    width: 75%;
+    height: 75%;
+    overflow: visible;
+    overflow-y: none;
+  }
+  .centro img{
+    width: 75%;
+
+  }
+  div , h1, h2{
+    width: 75%;
+    height: 75%;
+  }
+}*/
+

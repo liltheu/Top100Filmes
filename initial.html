@@ -10,7 +10,7 @@
 	<div class="container">
 	  <div class="canto-esquerdo"></div>
 	  <div class="centro">
-	  	<img src="logo.jpg">
+	  	<img src="logo.png">
 	  </div>
 	  <div class="canto-direito"></div>
 	  <main></main>
@@ -31,11 +31,18 @@
 	    	const div = document.createElement('div');
 	    	const h1 = document.createElement('h1');
 	    	const h2 = document.createElement('h2');
+	    	const img = document.createElement('img');
 
 	    	div.className = 'miolo'+i;
+	    	div.setAttribute("style","background-image: linear-gradient(to bottom right,#8c62b3,#7126b7 ) ;display: grid;grid-template-columns: 1fr 21r;grid-template-rows: 5vh 5vh;height: 10vh;border-radius: 10px;rid-column-gap: 10vh;margin-top: 50px;-webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);-moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);");
 	    	h1.setAttribute("id",'titulo'+i);
+	    	h1.setAttribute("style","font-size: 20px;margin-left: 10px;color: white;font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;");
+	    	img.setAttribute("id",'imagem'+i);
+	    	img.src = myObj[i].imagem;
 	    	h2.setAttribute("id",'nota'+i);
+	    	h2.setAttribute("style","font-size: 20px;margin-bottom: 0vh;margin-left: 500px;color: white;font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;")
 	    	div.append(h1)
+	    	div.append(img)
 	    	div.append(h2)
 	    	meio.appendChild(div)
 	    	document.getElementById("titulo"+i).innerHTML =myObj[i].titulo;

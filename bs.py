@@ -19,9 +19,11 @@ for filme in filmes:
     titulo = (filme.h3.a.text)
     ano = (filme.find('span', {'class':'lister-item-year text-muted unbold'}).text[1:5])
     nota = (filme.find('div', {'class':'inline-block ratings-imdb-rating'})['data-value'])
+    imagem = (filme.find('img', {'class':'loadlate'})['loadlate'])
 
     dados.append({
       'titulo': titulo,
+      'imagem': imagem,
       'ano': ano,
       'nota': nota
     })
