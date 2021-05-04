@@ -34,7 +34,7 @@
 	    	const img = document.createElement('img');
 
 	    	div.className = 'miolo'+i;
-	    	div.setAttribute("style","background-image: linear-gradient(to bottom right,#8c62b3,#7126b7 ) ;display: grid;grid-template-columns: 1fr 21r;grid-template-rows: 5vh 5vh;height: 10vh;border-radius: 10px;rid-column-gap: 10vh;margin-top: 50px;-webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);-moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);");
+	    	div.setAttribute("style","background-image: linear-gradient(to bottom right,#8c62b3,#7126b7 ) ;display: grid;grid-template-columns: 1fr 21r;grid-template-rows: 5vh 5vh;border-radius: 10px;rid-column-gap: 10vh;margin-top: 50px;-webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);-moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);");
 	    	h1.setAttribute("id",'titulo'+i);
 	    	h1.setAttribute("style","font-size: 20px;margin-left: 10px;color: white;font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;");
 	    	img.setAttribute("id",'imagem'+i);
@@ -45,8 +45,8 @@
 	    	div.append(img)
 	    	div.append(h2)
 	    	meio.appendChild(div)
-	    	document.getElementById("titulo"+i).innerHTML =myObj[i].titulo;
-	    	document.getElementById("nota"+i).innerHTML =myObj[i].nota;
+	    	document.getElementById("titulo"+i).innerHTML ='Titulo: ' + myObj[i].titulo;
+	    	document.getElementById("nota"+i).innerHTML ='Nota: ' + myObj[i].nota;
 
 	    }
 	    
